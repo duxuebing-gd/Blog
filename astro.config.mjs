@@ -4,8 +4,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
 
-// Cloudflare Pages 生产域名
+// Cloudflare Pages 生产域名（Deployments 页 Production 里显示的地址）
 export default defineConfig({
-	site: 'https://duxuebing.pages.dev',
+	site: 'https://blog-6y7.pages.dev',
 	integrations: [mdx(), sitemap()],
 });
