@@ -1,0 +1,105 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import PostList from '../components/PostList.astro';
+import { SITE_DESCRIPTION, SITE_TITLE, CATEGORIES, CATEGORY_KEYS } from '../consts';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+const recentPosts = posts.slice(0, 5);
+---
+
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+			}
+			.hero {
+				margin-bottom: 2.5rem;
+			}
+			.hero h1 {
+				margin-bottom: 0.5rem;
+			}
+			.hero p {
+				color: rgb(var(--gray));
+				font-size: 1.1em;
+				line-height: 1.7;
+			}
+			.categories {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 1rem;
+				margin: 2rem 0 3rem;
+			}
+			.category-card {
+				padding: 1.25rem;
+				border-radius: 12px;
+				background: rgb(var(--gray-light));
+				text-decoration: none;
+				color: inherit;
+				transition: 0.2s ease;
+			}
+			.category-card:hover {
+				transform: translateY(-2px);
+				box-shadow: var(--box-shadow);
+			}
+			.category-card h3 {
+				margin: 0 0 0.5rem;
+				color: rgb(var(--accent));
+			}
+			.category-card p {
+				margin: 0;
+				color: rgb(var(--gray));
+				font-size: 0.95em;
+				line-height: 1.5;
+			}
+			.section-title {
+				margin-bottom: 1rem;
+			}
+			@media (max-width: 720px) {
+				.categories {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<section class="hero">
+				<h1>{SITE_TITLE}</h1>
+				<p>{SITE_DESCRIPTION}</p>
+				<p>这里记录我在技术、英语学习和生活中的点滴思考。欢迎阅读，也欢迎通过 GitHub 与我交流。</p>
+			</section>
+
+			<section>
+				<h2>分类浏览</h2>
+				<div class="categories">
+					{
+						CATEGORY_KEYS.map((key) => (
+							<a class="category-card" href={`/blog/${key}/`}>
+								<h3>{CATEGORIES[key].label}</h3>
+								<p>{CATEGORIES[key].description}</p>
+							</a>
+						))
+					}
+				</div>
+			</section>
+
+			<section>
+				<h2 class="section-title">最新文章</h2>
+				<PostList posts={recentPosts} />
+				<p>
+					<a href="/blog/">查看全部文章 →</a>
+				</p>
+			</section>
+		</main>
+		<Footer />
+	</body>
+</html>

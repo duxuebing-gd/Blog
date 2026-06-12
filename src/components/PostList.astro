@@ -1,0 +1,113 @@
+---
+import { Image } from 'astro:assets';
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from './FormattedDate.astro';
+import { CATEGORIES, type Category } from '../consts';
+
+interface Props {
+	posts: CollectionEntry<'blog'>[];
+	showCategory?: boolean;
+}
+
+const { posts, showCategory = true } = Astro.props;
+
+function getCategoryFromPost(post: CollectionEntry<'blog'>): Category {
+	return post.data.category;
+}
+---
+
+<ul class="post-list">
+	{
+		posts.map((post) => (
+			<li>
+				<a href={`/blog/${post.id}/`}>
+					{post.data.heroImage && (
+						<Image width={720} height={360} src={post.data.heroImage} alt="" />
+					)}
+					{showCategory && (
+						<span class="category">{CATEGORIES[getCategoryFromPost(post)].label}</span>
+					)}
+					<h4 class="title">{post.data.title}</h4>
+					<p class="description">{post.data.description}</p>
+					<p class="date">
+						<FormattedDate date={post.data.pubDate} />
+					</p>
+				</a>
+			</li>
+		))
+	}
+</ul>
+
+<style>
+	.post-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2rem;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+	.post-list li {
+		width: calc(50% - 1rem);
+	}
+	.post-list li * {
+		text-decoration: none;
+		transition: 0.2s ease;
+	}
+	.post-list li:first-child {
+		width: 100%;
+		margin-bottom: 1rem;
+	}
+	.post-list li:first-child img {
+		width: 100%;
+	}
+	.post-list li img {
+		margin-bottom: 0.5rem;
+		border-radius: 12px;
+	}
+	.post-list li a {
+		display: block;
+	}
+	.category {
+		display: inline-block;
+		margin-bottom: 0.5rem;
+		padding: 0.15em 0.6em;
+		border-radius: 999px;
+		background: rgb(var(--gray-light));
+		color: rgb(var(--gray-dark));
+		font-size: 0.85em;
+	}
+	.title {
+		margin: 0;
+		color: rgb(var(--black));
+		line-height: 1.3;
+	}
+	.description {
+		margin: 0.5em 0;
+		color: rgb(var(--gray));
+		font-size: 0.95em;
+		line-height: 1.5;
+	}
+	.date {
+		margin: 0;
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+	.post-list li a:hover h4,
+	.post-list li a:hover .date,
+	.post-list li a:hover .description {
+		color: rgb(var(--accent));
+	}
+	.post-list a:hover img {
+		box-shadow: var(--box-shadow);
+	}
+	@media (max-width: 720px) {
+		.post-list {
+			gap: 1.5em;
+		}
+		.post-list li,
+		.post-list li:first-child {
+			width: 100%;
+		}
+	}
+</style>
