@@ -1,15 +1,48 @@
 ---
+import { GITHUB_REPO } from '../consts';
+
 const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} 个人笔记. All rights reserved.
+	<div class="footer-inner">
+		<p class="footer-line">
+			<span class="prompt">$</span> echo "Built with Astro · Deployed on Cloudflare Pages"
+		</p>
+		<p class="footer-copy">
+			&copy; {today.getFullYear()} 个人笔记 ·
+			<a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer">GitHub</a>
+		</p>
+	</div>
 </footer>
+
 <style>
 	footer {
-		padding: 2em 1em 6em 1em;
-		background: linear-gradient(var(--gray-gradient)) no-repeat;
-		color: rgb(var(--gray));
+		border-top: 1px solid var(--border);
+		padding: 2rem 1rem 3rem;
+		margin-top: 2rem;
+	}
+
+	.footer-inner {
+		max-width: var(--max-width);
+		margin: 0 auto;
 		text-align: center;
+	}
+
+	.footer-line {
+		font-family: var(--font-mono);
+		font-size: 0.78rem;
+		color: var(--text-dim);
+		margin: 0 0 0.75rem;
+	}
+
+	.prompt {
+		color: var(--accent-green);
+	}
+
+	.footer-copy {
+		margin: 0;
+		font-size: 0.85rem;
+		color: var(--text-dim);
 	}
 </style>

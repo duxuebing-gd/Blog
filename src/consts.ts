@@ -7,14 +7,17 @@ export const CATEGORIES = {
 	tech: {
 		label: '技术',
 		description: '编程、工具与工程实践笔记',
+		icon: '{ }',
 	},
 	english: {
 		label: '英语',
 		description: '词汇、语法与阅读学习记录',
+		icon: 'Aa',
 	},
 	life: {
 		label: '生活',
 		description: '日常思考与生活感悟',
+		icon: '~',
 	},
 } as const;
 

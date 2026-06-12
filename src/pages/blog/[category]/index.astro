@@ -27,31 +27,21 @@ const posts = (await getCollection('blog'))
 			title={`${categoryInfo.label} | ${SITE_TITLE}`}
 			description={categoryInfo.description}
 		/>
-		<style>
-			main {
-				width: 960px;
-			}
-			h1 {
-				margin-bottom: 0.25rem;
-			}
-			.subtitle {
-				color: rgb(var(--gray));
-				margin-bottom: 2rem;
-			}
-			.empty {
-				color: rgb(var(--gray));
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>{categoryInfo.label}</h1>
-			<p class="subtitle">{categoryInfo.description}</p>
+			<div class="page-header">
+				<h1>{categoryInfo.label}</h1>
+				<p class="subtitle">{categoryInfo.description}</p>
+			</div>
 			{posts.length > 0 ? (
 				<PostList posts={posts} showCategory={false} />
 			) : (
-				<p class="empty">该分类下还没有文章，可以在 <code>src/content/blog/{category}/</code> 目录下添加 Markdown 文件。</p>
+				<p class="empty-state">
+					// 该分类下还没有文章<br />
+					// 在 src/content/blog/{category}/ 目录下添加 Markdown 文件
+				</p>
 			)}
 		</main>
 		<Footer />

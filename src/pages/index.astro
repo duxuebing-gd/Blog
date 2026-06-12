@@ -16,74 +16,28 @@ const recentPosts = posts.slice(0, 5);
 <html lang="zh-CN">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			main {
-				width: 960px;
-			}
-			.hero {
-				margin-bottom: 2.5rem;
-			}
-			.hero h1 {
-				margin-bottom: 0.5rem;
-			}
-			.hero p {
-				color: rgb(var(--gray));
-				font-size: 1.1em;
-				line-height: 1.7;
-			}
-			.categories {
-				display: grid;
-				grid-template-columns: repeat(3, 1fr);
-				gap: 1rem;
-				margin: 2rem 0 3rem;
-			}
-			.category-card {
-				padding: 1.25rem;
-				border-radius: 12px;
-				background: rgb(var(--gray-light));
-				text-decoration: none;
-				color: inherit;
-				transition: 0.2s ease;
-			}
-			.category-card:hover {
-				transform: translateY(-2px);
-				box-shadow: var(--box-shadow);
-			}
-			.category-card h3 {
-				margin: 0 0 0.5rem;
-				color: rgb(var(--accent));
-			}
-			.category-card p {
-				margin: 0;
-				color: rgb(var(--gray));
-				font-size: 0.95em;
-				line-height: 1.5;
-			}
-			.section-title {
-				margin-bottom: 1rem;
-			}
-			@media (max-width: 720px) {
-				.categories {
-					grid-template-columns: 1fr;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<section class="hero">
+				<span class="hero-badge">dev.log</span>
 				<h1>{SITE_TITLE}</h1>
-				<p>{SITE_DESCRIPTION}</p>
-				<p>这里记录我在技术、英语学习和生活中的点滴思考。欢迎阅读，也欢迎通过 GitHub 与我交流。</p>
+				<p class="hero-desc">{SITE_DESCRIPTION}</p>
+				<div class="terminal">
+					<div><span class="prompt">$</span> <span class="cmd">cat README.md</span></div>
+					<div class="output">// 技术笔记 · 英语学习 · 生活感悟</div>
+					<div class="output">// 用 Markdown 写作，Git 版本管理，Cloudflare 全球部署</div>
+				</div>
 			</section>
 
 			<section>
-				<h2>分类浏览</h2>
+				<h2 class="section-title">Categories</h2>
 				<div class="categories">
 					{
 						CATEGORY_KEYS.map((key) => (
-							<a class="category-card" href={`/blog/${key}/`}>
+							<a class={`category-card ${key}`} href={`/blog/${key}/`}>
+								<div class="card-icon">{CATEGORIES[key].icon}</div>
 								<h3>{CATEGORIES[key].label}</h3>
 								<p>{CATEGORIES[key].description}</p>
 							</a>
@@ -93,10 +47,10 @@ const recentPosts = posts.slice(0, 5);
 			</section>
 
 			<section>
-				<h2 class="section-title">最新文章</h2>
+				<h2 class="section-title">Recent Posts</h2>
 				<PostList posts={recentPosts} />
-				<p>
-					<a href="/blog/">查看全部文章 →</a>
+				<p style="margin-top: 1.5rem">
+					<a class="link-arrow" href="/blog/">ls /blog/ →</a>
 				</p>
 			</section>
 		</main>

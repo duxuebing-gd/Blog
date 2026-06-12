@@ -16,92 +16,37 @@ const categoryLabel = CATEGORIES[category as Category].label;
 <html lang="zh-CN">
 	<head>
 		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-				color: rgb(var(--gray-dark));
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.meta {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				gap: 0.75rem;
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-				font-size: 0.95em;
-			}
-			.category,
-			.tag {
-				display: inline-block;
-				padding: 0.15em 0.6em;
-				border-radius: 999px;
-				background: rgb(var(--gray-light));
-			}
-			.category {
-				color: rgb(var(--accent));
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
 	</head>
 
 	<body>
 		<Header />
 		<main>
 			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
+				{
+					heroImage && (
+						<div class="hero-image">
+							<Image width={1020} height={510} src={heroImage} alt="" />
+						</div>
+					)
+				}
 				<div class="prose">
-					<div class="title">
-						<div class="meta">
-							<span class="category">{categoryLabel}</span>
-							<span class="date">
+					<header class="article-header">
+						<div class="article-meta">
+							<span class="badge category">{categoryLabel}</span>
+							<span class="badge">
 								<FormattedDate date={pubDate} />
 							</span>
-							{
-								tags.map((tag) => (
-									<span class="tag">#{tag}</span>
-								))
-							}
+							{tags.map((tag) => <span class="badge tag">#{tag}</span>)}
 						</div>
 						{
 							updatedDate && (
-								<div class="last-updated-on">
+								<p class="last-updated">
 									更新于 <FormattedDate date={updatedDate} />
-								</div>
+								</p>
 							)
 						}
 						<h1>{title}</h1>
-						<hr />
-					</div>
+					</header>
 					<slot />
 				</div>
 			</article>
@@ -109,3 +54,18 @@ const categoryLabel = CATEGORIES[category as Category].label;
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.hero-image {
+		max-width: var(--prose-width);
+		margin: 0 auto;
+		padding-top: 1rem;
+	}
+
+	.hero-image :global(img) {
+		width: 100%;
+		border: 1px solid var(--border);
+		border-radius: var(--radius-lg);
+		box-shadow: var(--shadow-card);
+	}
+</style>
