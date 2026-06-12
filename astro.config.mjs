@@ -6,6 +6,6 @@ import { defineConfig } from 'astro/config';
 
 // Cloudflare Pages 生产域名（Deployments 页 Production 里显示的地址）
 export default defineConfig({
-	site: 'https://blog-6y7.pages.dev',
+	site: 'https://duxuebing-blog.pages.dev',
 	integrations: [mdx(), sitemap()],
 });
