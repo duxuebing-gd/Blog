@@ -1,7 +1,7 @@
 export const SITE_TITLE = '个人笔记';
 export const SITE_DESCRIPTION = '记录技术学习、英语笔记与生活感悟';
 
-export const GITHUB_REPO = 'https://github.com/YOUR_USERNAME/personal-blog';
+export const GITHUB_REPO = 'https://github.com/duxuebing-gd/Blog';
 
 export const CATEGORIES = {
 	tech: {
