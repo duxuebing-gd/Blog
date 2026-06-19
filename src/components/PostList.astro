@@ -18,7 +18,10 @@ const { posts, showCategory = true } = Astro.props;
 			const category = post.data.category as Category;
 			return (
 				<li>
-					<a href={`/blog/${post.id}/`}>
+					<a
+						href={`/blog/${post.id}/`}
+						class:list={['post-card', { 'has-cover': Boolean(post.data.heroImage) }]}
+					>
 						{post.data.heroImage && (
 							<div class="post-cover">
 								<Image
@@ -30,16 +33,18 @@ const { posts, showCategory = true } = Astro.props;
 								/>
 							</div>
 						)}
-						<div class="post-meta">
-							{showCategory && (
-								<span class={`category ${category}`}>{CATEGORIES[category].label}</span>
-							)}
-							<span class="date">
-								<FormattedDate date={post.data.pubDate} />
-							</span>
+						<div class="post-body">
+							<div class="post-meta">
+								{showCategory && (
+									<span class={`category ${category}`}>{CATEGORIES[category].label}</span>
+								)}
+								<span class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</span>
+							</div>
+							<h4 class="title">{post.data.title}</h4>
+							<p class="description">{post.data.description}</p>
 						</div>
-						<h4 class="title">{post.data.title}</h4>
-						<p class="description">{post.data.description}</p>
 					</a>
 				</li>
 			);
