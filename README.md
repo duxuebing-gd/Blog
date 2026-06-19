@@ -1,5 +1,7 @@
 # 个人笔记博客
 
+🌐 **在线访问：[https://blog-6y7.pages.dev](https://blog-6y7.pages.dev)**
+
 基于 [Astro](https://astro.build/) 搭建的个人博客，用于记录技术学习、英语笔记与生活感悟。通过 GitHub + Cloudflare Pages 免费部署，全球 CDN 加速。
 
 ## 功能
@@ -41,42 +43,15 @@ tags: [astro, 博客]
 ---
 ```
 
-## 部署到 Cloudflare Pages
+## 部署
 
-### 第一步：推送到 GitHub
-
-1. 在 GitHub 创建新仓库（例如 `personal-blog`）
-2. 更新 `src/consts.ts` 中的 `GITHUB_REPO` 为你的仓库地址
-3. 更新 `astro.config.mjs` 中的 `site` 为你的域名（部署后可改）
-
-```bash
-git add .
-git commit -m "Initial blog setup"
-git remote add origin git@github.com:YOUR_USERNAME/personal-blog.git
-git push -u origin main
-```
-
-### 第二步：连接 Cloudflare Pages
-
-1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com/)
-2. 进入 **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
-3. 选择你的 GitHub 仓库
-4. 构建设置：
+博客托管在 [Cloudflare Pages](https://pages.cloudflare.com/)，推送 `main` 分支后自动构建发布。
 
 | 配置项 | 值 |
 |--------|-----|
-| Framework preset | Astro |
 | Build command | `npm run build` |
-| Build output directory | `dist` |
-| Node.js version | `22`（环境变量 `NODE_VERSION=22`） |
-
-5. 点击 **Save and Deploy**
-
-部署完成后，你会获得一个 `https://xxx.pages.dev` 的免费域名。
-
-### 第三步：绑定自定义域名（可选）
-
-在 Cloudflare Pages 项目设置 → **Custom domains** 中添加你的域名。如果域名已在 Cloudflare 管理，会自动配置 DNS 和 HTTPS。
+| Build output | `dist` |
+| Node.js | `22` |
 
 ## 项目结构
 

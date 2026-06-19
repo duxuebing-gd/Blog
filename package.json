@@ -1,5 +1,6 @@
 {
   "name": "personal-blog",
+  "homepage": "https://blog-6y7.pages.dev",
   "type": "module",
   "version": "0.0.1",
   "engines": {
