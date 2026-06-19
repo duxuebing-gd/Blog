@@ -2,7 +2,7 @@
 title: 'PETS3 Day 1：U-1.1 主谓宾 + 词汇 #1–#15'
 description: '2026-06-19 学习记录。语法 U-1.1 主谓宾；词汇 #1–#15；课后题与费曼检验已完成。'
 pubDate: 2026-06-19
-updatedDate: 2026-06-19
+updatedDate: 2026-06-20
 category: english
 tags: [pets3, day-1, u-01, grammar, vocabulary]
 ---
@@ -119,7 +119,96 @@ tags: [pets3, day-1, u-01, grammar, vocabulary]
 - [x] 句型判断 + 选词填空已完成
 - [ ] 三单规则还需巩固（I tell ✅ / I tells ❌）
 
-**明天先复习**：三单规则 + 主系表 vs 主谓 + 双宾 vs 宾补。
+**明天先复习**：见下方 **[错题本 · D2 复习清单](#错题本--d2-复习清单)**。
+
+---
+
+## 错题本 · D2 复习清单
+
+> **D2（6/20 周六）开新课前，先花 15～20 min 过一遍本节。** 对照打勾。
+
+### 一、三单规则（错 5 处，最高优先级）
+
+**规则**：只有 **he / she / it / 单数名词** 才加 s/es；**I / you / we / they** 用原形。
+
+| 错句 | 正确 | 来源 |
+|------|------|------|
+| I **tells** you a joke. | I **tell** you a joke. | 自造句 |
+| I **gives** you… | I **give** you a skirt. | 自造句 |
+| I **likes** study English. | I **like to study** English. | 自造句 |
+| My mother **buy**… | My mother **buys**… | 选词填空 |
+| He **watch** TV… | He **watches** TV… | 选词填空 |
+
+**复习动作**（明天做）：
+
+- [ ] 口述：I / he 各造 1 句，动词形式互相对比
+- [ ] 重做选词填空第 1、4 题（闭卷）
+- [ ] 重写 3 句自造例句（改正版各写 1 遍）
+
+**口诀**：I tell, he **tell**s — **I 不加 s，he 要加 s**。
+
+---
+
+### 二、句型辨析（错 3 题）
+
+| 句子 | 我选的 | 正确 | 一句话错因 |
+|------|--------|------|------------|
+| She **is** happy. | 主谓 | **主系表** | `is` 是系动词，`happy` 是表语 |
+| He runs **in the park**. | 主谓宾宾补 | **主谓** | `in the park` 是地点状语，不是宾语 |
+| The boy **gives** me a candy. | 主谓宾宾补 | **主谓宾宾** | give sb sth = 双宾，没有「补语」 |
+
+**对比记忆**：
+
+```
+主系表：She is happy.          （be + 形容词）
+主谓：  He runs in the park.   （不及物 + 状语）
+双宾：  give / tell sb sth
+宾补：  make / ask / help sb + adj / to do
+```
+
+**复习动作**（明天做）：
+
+- [ ] 重做句型判断 #2、#4、#6（闭卷）
+- [ ] 各句型自己再造 1 例句：主系表 / 主谓 / 主谓宾宾 / 主谓宾宾补
+
+---
+
+### 三、其他语法点
+
+| 问题 | 正确做法 |
+|------|----------|
+| I gives you **buy** a skirt | 一句只能一个谓语 → **I buy you a skirt.** |
+| I likes **study** English | like 后接 **to do** 或 **doing** → **like to study** |
+
+---
+
+### 四、词汇（5 个难词 + 1 个拼写）
+
+明天复习前先 **闭卷默写** 音标或中文，再造句：
+
+| 单词 | 易错点 | 复习句（可参考） |
+|------|--------|------------------|
+| plastic | 名词「塑料」 | This bottle is made of **plastic**. |
+| preferable | 拼写 **prefera**ble | Tea is **preferable** to coffee for me. |
+| consistent | adj. 一致的 | She is **consistent** in her daily routine. |
+| comrade | n. 同伴 | He is my old **comrade**. |
+| moan | v. 抱怨 | Don't **moan** about the homework. |
+
+- [ ] 5 个难词各造 1 句（闭卷）
+- [ ] 拼写 preferable 3 遍
+
+---
+
+### 五、D2 复习时间表（建议 20 min）
+
+| 步骤 | 时长 | 内容 |
+|------|------|------|
+| 1 | 5 min | 三单口诀 + 5 个错句口述改正 |
+| 2 | 5 min | 句型判断 #2/#4/#6 重做 |
+| 3 | 5 min | 5 个难词闭卷造句 |
+| 4 | 5 min | 3 句自造语法例句重写 |
+
+✅ 全部打勾后，再开始 D2 新内容（词汇 #16–#35 + U-1.1 课后题 + U-1.2 主系表）。
 
 ---
 
@@ -127,6 +216,6 @@ tags: [pets3, day-1, u-01, grammar, vocabulary]
 
 | 开始时间 | 结束时间 | 实际时长 | 备注 |
 |----------|----------|----------|------|
-| — | — | ~1 h | Day 1 作业完成；薄弱点：三单、句型辨析 |
+| — | — | ~1 h | Day 1 完成；D2 先过 [错题本](#错题本--d2-复习清单) |
 
 *PETS3 计划：[85 天每日清单](/blog/english/pets3-2026-study-plan/) · Day 1 · D2 见计划表*
