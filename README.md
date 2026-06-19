@@ -2,12 +2,12 @@
 
 🌐 **在线访问：[https://blog-6y7.pages.dev](https://blog-6y7.pages.dev)**
 
-基于 [Astro](https://astro.build/) 搭建的个人博客，用于记录技术学习、英语笔记与生活感悟。通过 GitHub + Cloudflare Pages 免费部署，全球 CDN 加速。
+基于 [Astro](https://astro.build/) 搭建的个人博客，用于记录技术学习、英语笔记、生活感悟与阅读笔记。通过 GitHub + Cloudflare Pages 免费部署，全球 CDN 加速。
 
 ## 功能
 
 - Markdown 写文章，Git 版本管理
-- 三个分类：技术 / 英语 / 生活
+- 三个分类：技术 / 英语 / 生活与阅读
 - RSS 订阅、Sitemap、SEO 友好
 - 推送代码自动部署
 
@@ -28,7 +28,7 @@ npm run preview   # 预览构建结果
 src/content/blog/
 ├── tech/           # 技术笔记
 ├── english/        # 英语学习
-└── life/           # 生活感悟
+└── life/           # 生活感悟与读书笔记
 ```
 
 每篇文章需要 frontmatter：

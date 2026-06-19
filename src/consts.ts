@@ -1,5 +1,5 @@
 export const SITE_TITLE = '个人笔记';
-export const SITE_DESCRIPTION = '记录技术学习、英语笔记与生活感悟';
+export const SITE_DESCRIPTION = '记录技术学习、英语笔记、生活感悟与阅读笔记';
 
 export const GITHUB_REPO = 'https://github.com/duxuebing-gd/Blog';
 
@@ -15,9 +15,9 @@ export const CATEGORIES = {
 		icon: 'Aa',
 	},
 	life: {
-		label: '生活',
-		description: '日常思考与生活感悟',
-		icon: '~',
+		label: '生活与阅读',
+		description: '日常思考、生活感悟与读书笔记',
+		icon: '▤',
 	},
 } as const;
 
