@@ -25,7 +25,7 @@ const categoryLabel = CATEGORIES[category as Category].label;
 				{
 					heroImage && (
 						<div class="hero-image">
-							<Image width={1020} height={510} src={heroImage} alt="" />
+							<Image width={720} height={1024} src={heroImage} alt="" />
 						</div>
 					)
 				}
@@ -57,13 +57,19 @@ const categoryLabel = CATEGORIES[category as Category].label;
 
 <style>
 	.hero-image {
+		display: flex;
+		justify-content: center;
 		max-width: var(--prose-width);
 		margin: 0 auto;
 		padding-top: 1rem;
 	}
 
 	.hero-image :global(img) {
-		width: 100%;
+		width: auto;
+		max-width: min(280px, 100%);
+		height: auto;
+		max-height: 400px;
+		object-fit: contain;
 		border: 1px solid var(--border);
 		border-radius: var(--radius-lg);
 		box-shadow: var(--shadow-card);

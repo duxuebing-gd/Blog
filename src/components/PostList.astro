@@ -20,7 +20,15 @@ const { posts, showCategory = true } = Astro.props;
 				<li>
 					<a href={`/blog/${post.id}/`}>
 						{post.data.heroImage && (
-							<Image width={720} height={360} src={post.data.heroImage} alt="" />
+							<div class="post-cover">
+								<Image
+									width={360}
+									height={512}
+									src={post.data.heroImage}
+									alt=""
+									loading="lazy"
+								/>
+							</div>
 						)}
 						<div class="post-meta">
 							{showCategory && (
