@@ -1,8 +1,7 @@
 ---
 title: 'PETS3 Day 2：U-1.2 主系表 + 词汇 #16–#35'
 description: '2026-06-20 学习记录。语法 U-1.2 主系表；乱序词汇第 16–35 号；15 例句 + 语法摘要 + 博客笔记。'
-pubDate: 2026-06-20
-category: english
+updatedDate: 2026-06-20
 tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 ---
 
@@ -14,9 +13,9 @@ tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 | 日期 | 2026-06-20（周六） | |
 | 时长 | **2 h** | |
 | 复习 | [D1 错题本](/blog/english/pets3/u-01-subject-verb-object-day1/#错题本--d2-复习清单) | ☐ |
-| 语法 | 语法 PDF → **U-1.2 主系表** | ☐ |
+| 语法 | 语法 PDF → **U-1.2 主系表** | ☑ |
 | 词汇 | 乱序 PDF → **#16–#35**（20 词） | ☐ |
-| 产出 | 15 例句 + 语法摘要 3 句 + 博客笔记 | ☐ |
+| 产出 | 句型判断 10 题 + 语法摘要 | 句型 ☑ |
 
 ---
 
@@ -72,21 +71,41 @@ tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 | 3 | 感官系动词 + adj. | <!-- The evening air feels cool. --> |
 | 4 | （可选）和主谓宾对比 | <!-- I attend class.（主谓宾）vs The class is central.（主系表）--> |
 
-### 课后题 · 句型判断（U-1.2 第三节，做完填表）
+### 课后题 · 句型判断（U-1.2 第三节）— **6/10**
 
-| # | 句子 | 句型 | 对/错 | 错因 |
-|---|------|------|-------|------|
-| 1 | | | ☐ | |
-| 2 | | | ☐ | |
-| 3 | | | ☐ | |
-| 4 | | | ☐ | |
-| 5 | | | ☐ | |
+| # | 句子 | 我的答案 | 正确答案 | |
+|---|------|----------|----------|---|
+| 1 | He is a student. | 主系表 | 主系表 | ✅ |
+| 2 | She eats apples. | 主谓宾 | 主谓宾 | ✅ |
+| 3 | The cake tastes good. | 主谓宾 | **主系表** | ❌ |
+| 4 | We buy books for children. | 主谓宾 | 主谓宾 | ✅ |
+| 5 | They are busy. | 主系表 | 主系表 | ✅ |
+| 6 | This song sounds nice. | 主谓宾宾补 | **主系表** | ❌ |
+| 7 | She is in the park. | 主系表 | 主系表 | ✅ |
+| 8 | I love reading. | 主谓表 | **主谓宾** | ❌ |
+| 9 | My father tells me a story. | 主谓宾宾补 | **主谓宾宾** | ❌ |
+| 10 | The game makes us excited. | 主谓宾宾补 | 主谓宾宾补 | ✅ |
+
+**今日错因**：
+
+| 错因 | 涉及题号 | 记住 |
+|------|----------|------|
+| **感官系动词当动作动词** | #3 #6 | taste / sound / smell / look / feel + **adj.** → **主系表** |
+| **love 是及物动词** | #8 | I love reading. → reading 是**宾语**（动名词），不是表语 |
+| **tell 双宾结构** | #9 | tell **me** **a story** = 给谁 + 什么 → **主谓宾宾** |
+
+**感官系动词速记**（#3、#6 错在这里）：
+
+```
+The cake tastes good.   = 蛋糕尝起来好  → 主系表（不是「蛋糕吃 good」）
+This song sounds nice.  = 歌听起来好听  → 主系表（不是宾补）
+```
 
 ### 语法摘要 3 句（中文）
 
-1. 
-2. 
-3. 
+1. **系动词**（is / look / sound / taste / feel…）后面接形容词或名词，说明主语「是什么 / 怎么样」→ **主系表**。
+2. **感官动词 + 形容词**（tastes good, sounds nice）是主系表，不是主谓宾。
+3. **tell / give sb sth** = 主谓宾宾；**make sb adj** = 主谓宾宾补 — #9 和 #10 的区别。
 
 ---
 
@@ -143,9 +162,11 @@ tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 
 ## 费曼检验
 
-- [ ] 关掉 PDF：主系表和主谓宾有什么区别？（≤ 30 秒）
-- [ ] 造 1 句主谓宾 + 1 句主系表，主语相同
-- [ ] 随机 3 个新词闭卷造句
+- [x] 主系表 be 动词句（#1 #5 #7）判断正确
+- [ ] **taste / sound + adj.** 仍易错 → D3 先复习 #3 #6
+- [ ] tell sb sth vs make sb adj → D3 复习 #9
+
+**D3 开课前 5 min 重做**：#3 #6 #8 #9（闭卷）
 
 ---
 
@@ -153,6 +174,6 @@ tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 
 | 开始时间 | 结束时间 | 实际时长 | 备注 |
 |----------|----------|----------|------|
-| | | | |
+| — | — | — | U-1.2 句型判断 6/10；薄弱：感官系动词、双宾 |
 
 *上一篇：[Day 1 · U-1.1 主谓宾](/blog/english/pets3/u-01-subject-verb-object-day1/) · 计划：[85 天每日清单](/blog/english/pets3-2026-study-plan/) · 明天 D3：U-1.2 课后题*
