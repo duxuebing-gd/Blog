@@ -2,6 +2,8 @@
 title: 'PETS3 Day 2：U-1.2 主系表 + 词汇 #16–#35'
 description: '2026-06-20 学习记录。语法 U-1.2 主系表；乱序词汇第 16–35 号；15 例句 + 语法摘要 + 博客笔记。'
 updatedDate: 2026-06-20
+pubDate: 2026-06-20
+category: english
 tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 ---
 
@@ -9,13 +11,13 @@ tags: [pets3, day-2, u-01, grammar, linking-verb, vocabulary]
 
 | 项目 | 内容 | 完成 |
 |------|------|------|
-| Day | **D2** / 85 | ☐ |
+| Day | **D2** / 85 | ☑ |
 | 日期 | 2026-06-20（周六） | |
 | 时长 | **2 h** | |
 | 复习 | [D1 错题本](/blog/english/pets3/u-01-subject-verb-object-day1/#错题本--d2-复习清单) | ☐ |
 | 语法 | 语法 PDF → **U-1.2 主系表** | ☑ |
 | 词汇 | 乱序 PDF → **#16–#35**（20 词） | ☐ |
-| 产出 | 句型判断 10 题 + 语法摘要 | 句型 ☑ |
+| 产出 | 句型判断 + 选词填空 + 语法查错 | ☑ |
 
 ---
 
@@ -107,6 +109,62 @@ This song sounds nice.  = 歌听起来好听  → 主系表（不是宾补）
 2. **感官动词 + 形容词**（tastes good, sounds nice）是主系表，不是主谓宾。
 3. **tell / give sb sth** = 主谓宾宾；**make sb adj** = 主谓宾宾补 — #9 和 #10 的区别。
 
+### 课后题 · 选词填空（U-1.2 第二节）— **3/8**
+
+备选词（各用一次）：is · are · look · eat · run · enjoy · give · make
+
+| # | 句子 | 我的答案 | 正确答案 | |
+|---|------|----------|----------|---|
+| 1 | The flowers ___ beautiful. | look | look | ✅ |
+| 2 | He ___ a teacher. | is | is | ✅ |
+| 3 | We ___ noodles for breakfast. | enjoy | **eat** | ❌ |
+| 4 | She ___ every afternoon. | eat | **runs** | ❌ |
+| 5 | They ___ my good friends. | are | are | ✅ |
+| 6 | I ___ playing basketball with friends. | make | **enjoy** | ❌ |
+| 7 | My teacher ___ me a pen and a book. | give | **gives** | ❌ 词对，形式错 |
+| 8 | The news ___ us happy. | look | **makes** | ❌ |
+
+**参考答案**：
+
+```
+1. The flowers look beautiful.
+2. He is a teacher.
+3. We eat noodles for breakfast.
+4. She runs every afternoon.
+5. They are my good friends.
+6. I enjoy playing basketball with friends.
+7. My teacher gives me a pen and a book.
+8. The news makes us happy.
+```
+
+**错因**：look 用了两次；run/eat 未用；#8 应是 **make us happy**（宾补），不是 look。
+
+### 课后题 · 语法查错（U-1.2 第三节）
+
+**做题三步**：找主语 → 单数还是复数 → 有没有 yesterday 等时间词。
+
+| # | 原句 | 改正 | 错因 |
+|---|------|------|------|
+| 1 | Lily **are** a kind and happy girl. | Lily **is**… | be 动词：Lily 单数 → is ✅ 已改对 |
+| 2 | She **like** drawing… | She **likes**… | 三单 ✅ 已改对 |
+| 3 | Her mother **give**… **yesterday**. | Her mother **gave**… | **yesterday → 过去式 gave**（不是 gives） |
+| 4 | Lily **draw** a small cat… | Lily **draws**… | She/Lily 三单 |
+| 5 | She **show** the picture… | She **shows**… | She 三单 |
+| 6 | All her **classmate thinks**… | All her **classmates think**… | 名词复数 + 复数动词 |
+| 7 | Her teacher **let** her keep… | Her teacher **lets** her keep… | teacher 三单 |
+| 8 | Lily **feel** very proud… | Lily **feels**… | Lily 三单 |
+| 9 | She **say** thanks… | She **says**… | She 三单 |
+| 10 | Her parents **loves** her… | Her parents **love** her… | parents 复数，动词不加 s |
+
+**口诀**：
+
+```
+Lily / She / teacher  → likes, draws, feels, lets, says
+parents / classmates  → love, think（不加 s）
+yesterday             → gave（过去式）
+Lily + be             → is（不是 are）
+```
+
 ---
 
 ## 词汇 · 乱序 #16–#35
@@ -162,11 +220,30 @@ This song sounds nice.  = 歌听起来好听  → 主系表（不是宾补）
 
 ## 费曼检验
 
-- [x] 主系表 be 动词句（#1 #5 #7）判断正确
-- [ ] **taste / sound + adj.** 仍易错 → D3 先复习 #3 #6
-- [ ] tell sb sth vs make sb adj → D3 复习 #9
+- [x] 主系表 be 动词句（句型判断 #1 #5 #7）判断正确
+- [ ] **taste / sound + adj.** 仍易错 → D3 先复习
+- [ ] tell sb sth vs make sb adj → D3 复习
+- [ ] **yesterday → 过去式**（语法查错 #3）→ D3 复习
+- [ ] 复数主语动词不加 s（#6 #10）→ D3 复习
 
-**D3 开课前 5 min 重做**：#3 #6 #8 #9（闭卷）
+**D3 开课前 10 min 重做**：
+
+- 句型判断 #3 #6 #8 #9（闭卷）
+- 语法查错 #3 #6 #10（闭卷）
+- 选词填空 #4 #6 #8（闭卷）
+
+---
+
+## D2 错题本 · D3 复习清单
+
+| 优先级 | 知识点 | 来自 |
+|--------|--------|------|
+| ★★★ | yesterday → **gave** 不是 gives | 语法查错 #3 |
+| ★★★ | 感官系动词 + adj. = 主系表 | 句型 #3 #6 |
+| ★★ | parents/classmates 复数 → 动词原形 | 语法查错 #6 #10 |
+| ★★ | make sb adj ≠ look sb adj | 选词填空 #8 |
+| ★★ | tell/give sb sth = 主谓宾宾 | 句型 #9 |
+| ★ | enjoy doing vs make sb do | 选词填空 #6 |
 
 ---
 
@@ -174,6 +251,6 @@ This song sounds nice.  = 歌听起来好听  → 主系表（不是宾补）
 
 | 开始时间 | 结束时间 | 实际时长 | 备注 |
 |----------|----------|----------|------|
-| — | — | — | U-1.2 句型判断 6/10；薄弱：感官系动词、双宾 |
+| — | — | ~2 h | 句型 6/10 · 选词 3/8 · 语法查错已学 |
 
 *上一篇：[Day 1 · U-1.1 主谓宾](/blog/english/pets3/u-01-subject-verb-object-day1/) · 计划：[85 天每日清单](/blog/english/pets3-2026-study-plan/) · 明天 D3：U-1.2 课后题*
