@@ -440,6 +440,12 @@ th {
 	color: var(--text-dim);
 }
 
+.post-list .reading-stat {
+	font-family: var(--font-mono);
+	font-size: 0.72rem;
+	color: var(--text-dim);
+}
+
 .post-list .title {
 	margin: 0;
 	font-size: 1.05rem;
@@ -553,6 +559,12 @@ th {
 	color: var(--accent-secondary);
 	border-color: rgba(99, 102, 241, 0.25);
 	background: rgba(99, 102, 241, 0.07);
+}
+
+.article-meta .badge.reading-stat {
+	color: var(--text-dim);
+	border-color: var(--border);
+	background: var(--bg-elevated);
 }
 
 .last-updated {
